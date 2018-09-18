@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mwiens91/yaft.svg?branch=master)](https://travis-ci.com/mwiens91/yaft)
+[![codecov](https://codecov.io/gh/mwiens91/yaft/branch/master/graph/badge.svg)](https://codecov.io/gh/mwiens91/yaft)
 [![PyPI](https://img.shields.io/pypi/v/yaft.svg)](https://pypi.org/project/yaft/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/yaft.svg)](https://pypi.org/project/yaft/)
 
