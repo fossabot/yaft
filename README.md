@@ -1,3 +1,6 @@
+[![PyPI](https://img.shields.io/pypi/v/yaft.svg)](https://pypi.org/project/yaft/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/yaft.svg)](https://pypi.org/project/yaft/)
+
 # Yet Another Fitness Tracker
 
 ### NOTE: this project is an active work in progress
