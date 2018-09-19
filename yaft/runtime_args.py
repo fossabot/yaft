@@ -12,8 +12,8 @@ def parse_runtime_args() -> argparse.Namespace:
     """Parse runtime args using argparse.
 
     Returns:
-        An object of type 'argparse.Namespace' containing the runtime
-        arguments as attributes.
+        An argparse.Namespace containing the runtime arguments as
+        attributes.
     """
     parser = argparse.ArgumentParser(
         prog=NAME,
