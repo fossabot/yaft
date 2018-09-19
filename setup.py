@@ -2,7 +2,7 @@
 
 from setuptools import setup
 from yaft.version import (
-    PYPI_NAME,
+    NAME,
     DESCRIPTION,
     VERSION,
 )
@@ -21,7 +21,7 @@ def capitalize(s):
     return s[:1].upper() + s[1:]
 
 setup(
-    name=PYPI_NAME,
+    name=NAME,
     version=VERSION,
     description=capitalize(DESCRIPTION),
     long_description=long_description,

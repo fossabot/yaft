@@ -1,6 +1,5 @@
 """Contains name, version, description."""
 
-PYPI_NAME = 'yaft'
-VERBOSE_NAME = 'Yet Another Fitness Tracker'
+NAME = 'yaft'
 VERSION = '0.0.0'
-DESCRIPTION = 'track your weight and calorie intake'
+DESCRIPTION = 'yet another fitness tracker'
