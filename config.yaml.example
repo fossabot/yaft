@@ -1,0 +1,13 @@
+# yaft config file
+
+# This config file is looked for at
+#
+# - repository_base/config.yaml (if running from source)
+# - $XDG_CONFIG_HOME/yaft/config.yaml
+#
+# Note that if $XDG_CONFIG_HOME is not defined then $HOME/.config/ is
+# used instead.
+
+# Database stuff. Probably include timezone stuff here too?
+
+# Units: for weight and possibly calories too
