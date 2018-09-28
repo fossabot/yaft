@@ -19,6 +19,10 @@ def parse_runtime_args() -> argparse.Namespace:
         prog=NAME,
         description="%(prog)s - " + DESCRIPTION,)
     parser.add_argument(
+        '-c', '--config',
+        default=None,
+        help="explicit path to config file",)
+    parser.add_argument(
         '--version',
         action='version',
         version="%(prog)s " + VERSION)

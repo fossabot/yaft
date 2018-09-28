@@ -41,16 +41,29 @@ def find_config_file() -> str:
     raise ConfigFileNotFound
 
 
-def parse_config_file() -> Dict[str, str]:
+def parse_config_file(config_path: str = None) -> Dict[str, str]:
     """Find and parse a config file.
+
+    Args:
+        config_path: An optional path to the config file. If not passed
+            in, looks for the config file as documented in the
+            find_config_file function.
 
     Returns:
         A dictionary containing the variables specified in the config
         file.
+
+    Raises:
+        ConfigFileNotFound: A config file couldn't be found.
     """
-    # Find the config file first
-    config_path = find_config_file()
+    if config_path is None:
+        # Find the config file
+        config_path = find_config_file()
 
     # Now parse and return it
-    with open(config_path, 'r') as config_file:
-        return yaml.load(config_file)
+    try:
+        with open(config_path, 'r') as config_file:
+            return yaml.load(config_file)
+    except IOError:
+        # Be consistent with types of exceptions thrown
+        raise ConfigFileNotFound
