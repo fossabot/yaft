@@ -9,5 +9,10 @@
 # used instead.
 
 # Database stuff. Probably include timezone stuff here too?
+postgres-database-name: "yaft"
+postgres-database-user: "azurediamond"
+postgres-database-user-password: "hunter1"
+postgres-database-host: "localhost"
+postgres-database-port: ""
 
 # Units: for weight and possibly calories too

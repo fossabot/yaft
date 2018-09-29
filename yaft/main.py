@@ -11,3 +11,5 @@ def main():
 
     # Parse config file
     config_dict = parse_config_file(config_path=cli_args.config)
+
+    # Connect to database
