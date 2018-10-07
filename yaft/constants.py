@@ -14,9 +14,9 @@ CONFIG_FILE_NAME = 'config.yaml'
 try:
     PROJECT_CONFIG_HOME = os.path.join(
         os.environ['XDG_CONFIG_HOME'],
-        'twitch-game-notify')
+        'yaft')
 except KeyError:
     PROJECT_CONFIG_HOME = os.path.join(
         os.environ['HOME'],
         '.config/',
-        'twitch-game-notify',)
+        'yaft',)
