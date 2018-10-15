@@ -16,7 +16,7 @@ database_proxy = Proxy()
 
 class BaseModel(Model):
     """A base model that will use our Postgresql database"""
-    class Meta:
+    class Meta: # pylint: disable=missing-docstring
         database = database_proxy
 
 
