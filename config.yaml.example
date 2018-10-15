@@ -13,6 +13,6 @@ postgres-database-name: "yaft"
 postgres-database-user: "azurediamond"
 postgres-database-user-password: "hunter1"
 postgres-database-host: "localhost"
-postgres-database-port: ""
+postgres-database-port: "5432"
 
 # Units: for weight and possibly calories too

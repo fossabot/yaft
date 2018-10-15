@@ -1,7 +1,7 @@
 """Contains functions to parse runtime arguments."""
 
 import argparse
-from .version import(
+from .version import (
     DESCRIPTION,
     NAME,
     VERSION,
