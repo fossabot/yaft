@@ -5,7 +5,15 @@ python:
   - "3.6"
   - "3.7-dev"
 
+services:
+  - postgresql
+
 install:
+  # Set up PostgreSQL database
+  - psql --command "CREATE DATABASE yaft;"
+  - psql --command "CREATE USER azurediamond WITH PASSWORD 'hunter1';"
+  - psql --command "GRANT ALL PRIVILEGES ON DATABASE yaft TO azurediamond;"
+
   # Install Codecov
   - pip install codecov
 
