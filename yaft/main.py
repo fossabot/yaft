@@ -2,7 +2,10 @@
 
 from peewee import PostgresqlDatabase
 from .config import parse_config_file
-from .models import database_proxy
+from .models import (
+    database_proxy,
+    migrate_database,
+)
 from .runtime_args import parse_runtime_args
 
 
@@ -24,3 +27,13 @@ def main():
     )
 
     database_proxy.initialize(db)
+
+    # Do specific things based on the sub-command passed in
+    if cli_args.subcommand is None:
+        # Default action here
+        print("This is a default")
+    elif cli_args.subcommand == 'migrate':
+        # Migrate the database and exit
+        # TODO: add some kind of warning here, I think this might drop
+        # existing tables and recreate them
+        migrate_database(db)

@@ -2,6 +2,7 @@
 
 import datetime
 from peewee import (
+    Database,
     DateField,
     Model,
     Proxy,
@@ -35,3 +36,19 @@ class DateData(BaseModel):
         null=True,
         help_text="Weight in kg",
     )
+
+
+def migrate_database(database: Database):
+    """Creates database tables.
+
+    Args:
+        database: The database to create tables for.
+    """
+    # Connect
+    database.connect()
+
+    # Create tables
+    database.create_tables([DateData,])
+
+    # Close connection
+    database.close()
