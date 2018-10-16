@@ -2,6 +2,7 @@
 [![codecov](https://codecov.io/gh/mwiens91/yaft/branch/master/graph/badge.svg)](https://codecov.io/gh/mwiens91/yaft)
 [![PyPI](https://img.shields.io/pypi/v/yaft.svg)](https://pypi.org/project/yaft/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/yaft.svg)](https://pypi.org/project/yaft/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmwiens91%2Fyaft.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmwiens91%2Fyaft?ref=badge_shield)
 
 # Yet Another Fitness Tracker
 
@@ -21,3 +22,7 @@ I just want something simple:
 So that's what this is meant to do. Command line. Simple. Less
 featureful than every other fitness tracker—and in the best way
 possible.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmwiens91%2Fyaft.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmwiens91%2Fyaft?ref=badge_large)
